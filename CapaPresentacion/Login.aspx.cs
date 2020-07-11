@@ -27,7 +27,18 @@ namespace CapaPresentacion
                     var validacion = n_usuario.Login(e_usuario);
                     if (validacion == true)
                     {
-                        Response.Write("<script>alert('USUARIO CORRECTO')</script>");
+                        if (txtUsuario.Text.Equals("admin") && txtContrasenia.Text.Equals("admin"))
+                        {
+                            Response.Redirect("Formularios/FormAdministrador.aspx");
+                        }
+                        else
+                        {
+                            if (txtUsuario.Text.Equals("alumno") && txtContrasenia.Text.Equals("alumno"))
+                            {
+                                Response.Redirect("Formularios/FormAlumno.aspx");
+                            }
+                        }
+                        /*Response.Write("<script>alert('USUARIO CORRECTO')</script>");*/
                     }
                     else
                     {
@@ -48,7 +59,7 @@ namespace CapaPresentacion
                 
                 mensajeError("Por favor ingrese un usuario");
             }
-
+            
             
         }
         public void mensajeError(String msg)

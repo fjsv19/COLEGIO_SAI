@@ -76,8 +76,15 @@
     <Content Include="Bootstrap\Style.css" />
     <Content Include="css\EstiloAdmin.css" />
     <Content Include="css\estilos.css" />
+    <Content Include="Formularios\FormAdministrador.aspx" />
+    <Content Include="Formularios\FormAlumno.aspx" />
+    <Content Include="Formularios\FrmRegistrarUsuario.aspx" />
+    <Content Include="Formularios\GestionarAutoridad.aspx" />
+    <Content Include="Formularios\RegistrarMatricula.aspx" />
+    <Content Include="img\admin.png" />
     <Content Include="img\administrador.png" />
     <Content Include="img\cole.jpg" />
+    <Content Include="img\estudiante.png" />
     <Content Include="img\isSantaLucia.png" />
     <Content Include="img\Panel.png" />
     <Content Include="img\transparete.png" />
@@ -210,6 +217,55 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\FormAdministrador.aspx.cs">
+      <DependentUpon>FormAdministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormAdministrador.aspx.designer.cs">
+      <DependentUpon>FormAdministrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormAlumno.aspx.cs">
+      <DependentUpon>FormAlumno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormAlumno.aspx.designer.cs">
+      <DependentUpon>FormAlumno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormularioRegistroAutoridades.Master.cs">
+      <DependentUpon>FormularioRegistroAutoridades.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormularioRegistroAutoridades.Master.designer.cs">
+      <DependentUpon>FormularioRegistroAutoridades.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmRegistrarUsuario.aspx.cs">
+      <DependentUpon>FrmRegistrarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmRegistrarUsuario.aspx.designer.cs">
+      <DependentUpon>FrmRegistrarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\GestionarAutoridad.aspx.cs">
+      <DependentUpon>GestionarAutoridad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\GestionarAutoridad.aspx.designer.cs">
+      <DependentUpon>GestionarAutoridad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\RegistrarMatricula.aspx.cs">
+      <DependentUpon>RegistrarMatricula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\RegistrarMatricula.aspx.designer.cs">
+      <DependentUpon>RegistrarMatricula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.Master.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.Master.designer.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -218,6 +274,13 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usuarios.Master.cs">
+      <DependentUpon>Usuarios.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuarios.Master.designer.cs">
+      <DependentUpon>Usuarios.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="js\plugins\input-mask\phone-codes\phone-be.json" />
@@ -229,7 +292,10 @@
     <Content Include="Bootstrap\bootstrap-reboot.min.css.map" />
     <Content Include="Bootstrap\bootstrap.css.map" />
     <Content Include="Bootstrap\bootstrap.min.css.map" />
+    <Content Include="Home.Master" />
+    <Content Include="Formularios\FormularioRegistroAutoridades.Master" />
     <None Include="packages.config" />
+    <Content Include="Usuarios.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
