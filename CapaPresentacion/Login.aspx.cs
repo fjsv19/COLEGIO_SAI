@@ -31,7 +31,7 @@ namespace CapaPresentacion
                     }
                     else
                     {
-                        mensajeError("Usuario o Contraseña incorrectos. \t Por favor intente otra vez.");
+                        mensajeError("Usuario y/o Contraseña incorrectos. \n Por favor intente otra vez.");
                         txtUsuario.Text = "";
                         txtContrasenia.Text = "";
                         txtUsuario.Focus();
