@@ -1,4 +1,5 @@
-﻿using CapaEntidades.DTO;
+﻿using CapaEntidades.Cache;
+using CapaEntidades.DTO;
 using CapaNegocio;
 using System;
 using System.Collections.Generic;
@@ -25,20 +26,20 @@ namespace CapaPresentacion
                     N_Usuario n_usuario = new N_Usuario();
                     E_USUARIO e_usuario = new E_USUARIO(txtUsuario.Text, txtContrasenia.Text);
                     var validacion = n_usuario.Login(e_usuario);
+                    
                     if (validacion == true)
                     {
-                        if (txtUsuario.Text.Equals("admin") && txtContrasenia.Text.Equals("admin"))
+
+                        if (UsuarioLoginCache.CN_IDCONSTANTE == 1) //ADMINISTRADOR
                         {
                             Response.Redirect("Formularios/FormAdministrador.aspx");
                         }
-                        else
+
+                        if (UsuarioLoginCache.CN_IDCONSTANTE == 2) //ALUMNO
                         {
-                            if (txtUsuario.Text.Equals("alumno") && txtContrasenia.Text.Equals("alumno"))
-                            {
-                                Response.Redirect("Formularios/FormAlumno.aspx");
-                            }
+                            Response.Redirect("Formularios/FormAlumno.aspx");
                         }
-                        /*Response.Write("<script>alert('USUARIO CORRECTO')</script>");*/
+
                     }
                     else
                     {
