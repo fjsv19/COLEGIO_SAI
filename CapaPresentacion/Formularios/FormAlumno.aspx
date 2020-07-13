@@ -10,55 +10,41 @@
             <div class="col-md-6">
                 <div class="box box-primary">
                     <div class="box-body">
-                        <div class="form-group">
+                                                <div class="form-group">
                             <label>Nombres:</label>
+                            <div class="form-group">
+                                <asp:TextBox ID="txtNombres" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control" Enabled="false"></asp:TextBox>
+                            <label>Apellidos:</label>
+                            <div class="form-group">
+                                <asp:TextBox ID="txtApellidos" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label>Apellido Paterno:</label>
-                        </div>
-                        <div class="form-group">
-                            <asp:TextBox ID="txtApePa" runat="server" CssClass="form-control" Enabled="false"></asp:TextBox>
-                        </div>
-                        <div class="form-group">
-                            <label>Apellido Materno:</label>
-                        </div>
-                        <div class="form-group">
-                            <asp:TextBox ID="txtApeMa" runat="server" CssClass="form-control" Enabled="false"></asp:TextBox>
-                        </div>
-                        <div class="form-group">
-                            <label>Tipo de Documento:</label>
-                        </div>
-                        <div class="form-group">
-                            <asp:DropDownList ID="txtTipoDoc" runat="server" CssClass="form-control" Enabled="false">
-                                <asp:ListItem Selected="true">Seleccione Tipo Documento</asp:ListItem>
-                                <asp:ListItem Selected="False">DNI</asp:ListItem>
-                                <asp:ListItem Selected="False">Carnét de Extranjeria</asp:ListItem>
-                            </asp:DropDownList>
-                        </div>
-                        <div class="form-group">
-                            <label>Número de Documento:</label>
-                        </div>
-                        <div class="form-group">
-                            <asp:TextBox ID="txtNumDoc" runat="server" CssClass="form-control" Enabled="false"></asp:TextBox>
-                        </div>
-                        <div class="form-group">
-                            <label>Sexo:</label>
-                        </div>
-                        <div class="form-group">
-                            <asp:DropDownList ID="txtSexo" runat="server" CssClass="form-control" Enabled="false">
-                                <asp:ListItem Selected="true">Seleccione</asp:ListItem>
-                                <asp:ListItem Selected="False">Masculino</asp:ListItem>
-                                <asp:ListItem Selected="False">Femenino</asp:ListItem>
-                            </asp:DropDownList>
+                            <label>N° de Documento:</label>
+                            <div class="form-group">
+                                <asp:TextBox ID="txtNumDoc" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label>Fecha de Nacimiento:</label>
+                            <div class="form-group">
+                                <asp:TextBox ID="txtFechaNaci" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <asp:TextBox ID="txtNaci" runat="server" CssClass="form-control" Enabled="false"></asp:TextBox>
+                            <label>Teléfono:</label>
+                            <div class="form-group">
+                                <asp:TextBox ID="txtTelefono" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Direccion:</label>
+                            <div class="form-group">
+                                <asp:TextBox ID="txtDireccion" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -82,13 +68,13 @@
                             <label>Dirección:</label>
                         </div>
                         <div class="form-group">
-                            <asp:TextBox ID="txtDireccion" runat="server" CssClass="form-control" Enabled="false"></asp:TextBox>
+                            <asp:TextBox ID="txtDireccionAp" runat="server" CssClass="form-control" Enabled="false"></asp:TextBox>
                         </div>
                         <div class="form-group">
                             <label>Telefono:</label>
                         </div>
                         <div class="form-group">
-                            <asp:TextBox ID="txtTelefono" runat="server" CssClass="form-control" Enabled="false"></asp:TextBox>
+                            <asp:TextBox ID="txtTelefonoAp" runat="server" CssClass="form-control" Enabled="false"></asp:TextBox>
                         </div>
                         <div class="form-group">
                             <label>Tipo Persona:</label>

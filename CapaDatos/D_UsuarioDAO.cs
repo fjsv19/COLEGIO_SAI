@@ -10,7 +10,7 @@ using CapaEntidades.Cache;
 
 namespace CapaDatos
 {
-    public class CD_UsuarioDAO:Conexion 
+    public class D_UsuarioDAO:Conexion 
     {
 
         public bool Login(E_USUARIO usuario)

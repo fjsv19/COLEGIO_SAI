@@ -8,16 +8,15 @@ using CapaEntidades.DTO;
 
 namespace CapaNegocio
 {
-    public class N_Usuario
+    public class N_Persona
     {
 
-        D_UsuarioDAO usuarioDAO = new D_UsuarioDAO();
+        D_PersonaDAO personaDAO = new D_PersonaDAO();
 
-        public bool Login(E_USUARIO usuario)
+        public E_PERSONA perfilPersona()
         {
-            return usuarioDAO.Login(usuario);
+            return personaDAO.perfilPersona();
         }
-
 
     }
 }

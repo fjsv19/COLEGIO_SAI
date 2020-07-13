@@ -35,17 +35,18 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label>Correo:</label>
+                            <label>Teléfono:</label>
                             <div class="form-group">
-                                <asp:TextBox ID="txtCorreo" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                                <asp:TextBox ID="txtTelefono" runat="server" Text="" CssClass="form-control"></asp:TextBox>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label>Teléfono:</label>
+                            <label>Direccion:</label>
                             <div class="form-group">
-                                <asp:TextBox ID="TextTelefono" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                                <asp:TextBox ID="txtDireccion" runat="server" Text="" CssClass="form-control"></asp:TextBox>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
