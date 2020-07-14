@@ -8,7 +8,7 @@
     <section class="content-header">
         <h3 style="text-align:center"><b>REGISTRO DE AUTORIDAD INSTITUCIONAL</b></h3>
     </section>
-    <section class="content">
+    <section class="content" style="padding-bottom:133px">
         <div class="row">
 
             <div class="col-md-6">
@@ -33,16 +33,6 @@
                         </div>
                         <div class="form-group">
                             <asp:TextBox ID="txtApellidoMat" runat="server" Text="" CssClass="form-control"></asp:TextBox>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Seleccione Tipo Documento</label>
-                        </div>
-                        <div class="form-group">
-                            <asp:DropDownList ID="ddlTipoDoc" runat="server" CssClass="form-control">
-                                <asp:ListItem Selected="true">DNI</asp:ListItem>
-                                <asp:ListItem Selected="False">Carnét de Extranjeria</asp:ListItem>
-                            </asp:DropDownList>
                         </div>
 
                         <div class="form-group">
@@ -78,18 +68,6 @@
                 <div class="box box-primary">
                     <div class="box-body">
                         <div class="form-group">
-                            <label>Nro. Documento del Superior</label>
-                        </div>
-                        <div class="form-group">
-                            <asp:TextBox ID="txtSuperior" runat="server" Text="" CssClass="form-control"></asp:TextBox>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Correo</label>
-                        </div>
-                        <div class="form-group">
-                            <asp:TextBox ID="txtCorreo" runat="server" Text="" CssClass="form-control"></asp:TextBox>
-                        </div>
 
                         <div class="form-group">
                             <label>Direccion</label>
@@ -106,31 +84,15 @@
                         </div>
 
                         <div class="form-group">
-                            <label>Seleccione Tipo Persona</label>
+                            <label>Tipo de Persona</label>
                         </div>
                         <div class="form-group">
                             <asp:DropDownList ID="ddlTipoPersona" runat="server" CssClass="form-control">
-                                <asp:ListItem Selected="true">Docente</asp:ListItem>
+                                <asp:ListItem Selected="true">- Seleccione -</asp:ListItem>
+                                <asp:ListItem Selected="False">Docente</asp:ListItem>
                                 <asp:ListItem Selected="False">Sub Director</asp:ListItem>
                                 <asp:ListItem Selected="False">Administrador</asp:ListItem>
                                 <asp:ListItem Selected="False">Secretario</asp:ListItem>
-                            </asp:DropDownList>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Seleccione Especialidad</label>
-                        </div>
-                        <div class="form-group">
-                            <asp:DropDownList ID="ddlEspecialidad" runat="server" CssClass="form-control">
-                                <asp:ListItem Selected="true">Seleccione Especialidad</asp:ListItem>
-                                <asp:ListItem Selected="False">Matemática</asp:ListItem>
-                                <asp:ListItem Selected="False">Comunicación</asp:ListItem>
-                                <asp:ListItem Selected="False">Ciencia, Tecnología y Ambiente</asp:ListItem>
-                                <asp:ListItem Selected="False">Historia, Geografía y Economía</asp:ListItem>
-                                <asp:ListItem Selected="False">Persona, Familia, Relaciones Humanas</asp:ListItem>
-                                <asp:ListItem Selected="False">Inglés</asp:ListItem>
-                                <asp:ListItem Selected="False">Educación Religiosa</asp:ListItem>
-                                <asp:ListItem Selected="False">Educación por el Arte</asp:ListItem>
                             </asp:DropDownList>
                         </div>
                     </div>
@@ -139,7 +101,7 @@
 
         </div>
 
-        <div align="center">
+        <div align="center" style="padding-top:36%">
              <table>
                  <tr>
                     <td>

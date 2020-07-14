@@ -6,7 +6,7 @@
         <h3 style="text-align:center"><b>REGISTRO DE MATRICULA</b></h3>
     </section>
 
-    <section class="content">
+    <section class="content" style="padding-bottom:101px">
         <div class="row">
 
             <div class="col-md-12">
@@ -48,12 +48,11 @@
                         <div class="form-group">
                             <asp:TextBox ID="txtNumeroDoc" runat="server" Text="" CssClass="form-control"></asp:TextBox>
                         </div>
-
                         <div class="form-group">
-                            <label>Edad</label>
+                            <label>Fecha</label>
                         </div>
                         <div class="form-group">
-                            <asp:TextBox ID="txtEdad" runat="server" Text="" CssClass="form-control"></asp:TextBox>
+                            <asp:TextBox ID="txtFechaMatricula" runat="server" Text="" CssClass="form-control"></asp:TextBox>
                         </div>
                     </div>
                 </div>
@@ -83,16 +82,26 @@
                         <div class="form-group">
                             <asp:TextBox ID="txtTurno" runat="server" Text="" CssClass="form-control"></asp:TextBox>
                         </div>
+                        <div class="form-group">
+                            <label>Estado</label>
+                        </div>
+                        <div class="form-group">
+                            <asp:DropDownList ID="ddlSexo" runat="server" CssClass="form-control">
+                                <asp:ListItem Selected="true">- Seleccione -</asp:ListItem>
+                                <asp:ListItem Selected="false">Pendiente</asp:ListItem>
+                                <asp:ListItem Selected="False">Cancelado</asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div align="center">
+        <div align="center" style="padding-top:3%">
              <table>
                  <tr>
                     <td>
-                       <asp:Button ID="btnRegistrar" runat="server" CssClass="btn btn-success" Width="200px" Text="Generar Matricula"/>
+                       <asp:Button ID="btnRegistrar" runat="server" CssClass="btn btn-success" Width="200px" Text="Generar Matricula" OnClick="btnRegistrar_Click"/>
                     </td>
                     <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
                     <td>
