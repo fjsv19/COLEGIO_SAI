@@ -76,6 +76,7 @@
     <Content Include="Bootstrap\Style.css" />
     <Content Include="css\EstiloAdmin.css" />
     <Content Include="css\estilos.css" />
+    <Content Include="Formularios\FormAceptarMatricula.aspx" />
     <Content Include="Formularios\FormAdministrador.aspx" />
     <Content Include="Formularios\FormAlumno.aspx" />
     <Content Include="Formularios\FrmRegistrarUsuario.aspx" />
@@ -217,6 +218,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\FormAceptarMatricula.aspx.cs">
+      <DependentUpon>FormAceptarMatricula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormAceptarMatricula.aspx.designer.cs">
+      <DependentUpon>FormAceptarMatricula.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FormAdministrador.aspx.cs">
       <DependentUpon>FormAdministrador.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

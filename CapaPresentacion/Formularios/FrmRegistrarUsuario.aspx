@@ -5,7 +5,7 @@
     <section class="content-header">
         <h3 style="text-align:center"><b>REGISTRO DE ALUMNO</b></h3>
     </section>
-    <section class="content">
+    <section class="content" style="padding-bottom:160px">
         <div class="row">
             <div class="col-md-6">
                 <div class="box box-primary">
@@ -68,12 +68,19 @@
                         <div class="form-group">
                             <asp:TextBox ID="txtTelefono" runat="server" CssClass="form-control"></asp:TextBox>
                         </div>
+                        <div class="form-group">
+                            <label>Documento de Apoderado:</label>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtApoderado" runat="server" CssClass="form-control"></asp:TextBox><br /><br />
+                            <asp:Button ID="btnBuscarApoderado" runat="server" CssClass="btn btn-success" width="200px" text="Buscar"/>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         
-            <div>
+            <div align="center">
                 <table>
                     <tr>
                         <td>
