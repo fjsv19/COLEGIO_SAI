@@ -15,7 +15,7 @@ namespace CapaNegocio
 
         public bool Login(E_USUARIO usuario)
         {
-            return usuarioDAO.Login(usuario);
+            return usuarioDAO.Login(usuario); 
         } 
 
 
