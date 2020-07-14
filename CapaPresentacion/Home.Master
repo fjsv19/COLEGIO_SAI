@@ -138,7 +138,7 @@
                     <li><a href="GestionarAutoridad.aspx"><i class="fa fa-th"></i><span>Registrar Autoridad</span></a></li>
                     <li><a href="RegistrarMatricula.aspx"><i class="fa fa-th"></i><span>Registrar Matricula</span></a></li>
                     <li><a href="#"><i class="fa fa-dashboard"></i><span>Reporte de Matricula</span></a></li>
-                    <li><a href="/login.aspx"><i class="fa fa-th"></i><span>Cerrar Sesión</span></a></li>
+                    <li><a href="/login.aspx" onclick=""><i class="fa fa-th"></i><span>Cerrar Sesión</span></a></li>                    
                 </ul>
             </section>
         </aside>

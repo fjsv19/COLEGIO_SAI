@@ -30,6 +30,8 @@ namespace CapaPresentacion
                     if (validacion == true)
                     {
 
+                        Session["abrirSesion"] = txtUsuario.Text;
+
                         if (UsuarioLoginCache.CN_IDCONSTANTE == 1) //ADMINISTRADOR
                         {
                             Response.Redirect("Formularios/FormAdministrador.aspx");
@@ -50,14 +52,12 @@ namespace CapaPresentacion
                     }
                 }
                 else
-                {
-                    
+                {                    
                     mensajeError("Por favor ingrese una contraseña");
                 }
             }
             else
-            {
-                
+            {                
                 mensajeError("Por favor ingrese un usuario");
             }
             

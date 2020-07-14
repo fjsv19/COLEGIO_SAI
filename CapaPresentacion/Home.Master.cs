@@ -12,6 +12,14 @@ namespace CapaPresentacion
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if (!IsPostBack)
+            {
+                if (Session["abrirSesion"] == null)
+                {
+                    Response.Redirect("/login.aspx");
+                }
+            }
+
         }
     }
 }

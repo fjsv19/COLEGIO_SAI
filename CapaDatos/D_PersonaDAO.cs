@@ -35,7 +35,7 @@ namespace CapaDatos
                         persona.PE_APELLIDOPAT = reader.GetString(1);
                         persona.PE_APELLIDOMAT = reader.GetString(2);
                         persona.PE_IDENTIFICACION = reader.GetString(3);
-                        persona.PE_FECHANAC = reader.GetDateTime(4);
+                        persona.PE_FECHANAC = reader.GetDateTime(4) + "";
                         persona.PE_TELEFONO = reader.GetString(5);
                         persona.PE_DIRECCION = reader.GetString(6);
                     }
