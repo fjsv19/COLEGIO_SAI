@@ -18,5 +18,9 @@ namespace CapaNegocio
             return personaDAO.perfilPersona();
         }
 
+        public E_PERSONAL buscarPersonal(int documento)
+        {
+            return personaDAO.buscarPersonal(documento);
+        }
     }
 }

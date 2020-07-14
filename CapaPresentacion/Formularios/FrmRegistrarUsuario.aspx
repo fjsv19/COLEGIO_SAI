@@ -72,8 +72,14 @@
                             <label>Documento de Apoderado:</label>
                         </div>
                         <div class="form-group">
-                            <asp:TextBox ID="txtApoderado" runat="server" CssClass="form-control"></asp:TextBox><br /><br />
-                            <asp:Button ID="btnBuscarApoderado" runat="server" CssClass="btn btn-success" width="200px" text="Buscar"/>
+                            <asp:TextBox ID="txtApoderadoDoc" runat="server" CssClass="form-control"></asp:TextBox><br /><br />
+                            <asp:Button ID="btnBuscarApoderado" runat="server" CssClass="btn btn-success" width="200px" text="Buscar" OnClick="btnBuscarApoderado_Click"/>
+                        </div>
+                       <div class="form-group">
+                            <label>Apoderado:</label>
+                        </div>
+                        <div class="form-group">
+                            <asp:TextBox ID="txtApoderado" runat="server" CssClass="form-control"></asp:TextBox>
                         </div>
                     </div>
                 </div>

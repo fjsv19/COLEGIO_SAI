@@ -25,7 +25,7 @@ namespace CapaDatos
                     comand.Parameters.AddWithValue("@PE_APELLIDOPAT", persona.PE_APELLIDOPAT);
                     comand.Parameters.AddWithValue("@PE_APELLIDOMAT", persona.PE_APELLIDOMAT);
                     comand.Parameters.AddWithValue("@PE_IDENTIFICACION", persona.PE_IDENTIFICACION);
-                    comand.Parameters.AddWithValue("@PE_FECHANAC", persona.PE_FECHANAC);
+                    comand.Parameters.AddWithValue("@PE_FECHANAC", Convert.ToDateTime(persona.PE_FECHANAC));
                     comand.Parameters.AddWithValue("@PE_TELEFONO", persona.PE_TELEFONO);
                     comand.Parameters.AddWithValue("@PE_DIRECCION", persona.PE_DIRECCION);
                     comand.Parameters.AddWithValue("@PE_SEXO", persona.PE_SEXO);

@@ -21,5 +21,12 @@ namespace CapaPresentacion
             }
 
         }
+
+        protected void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Session.Remove("abrirSesion");
+            Response.Redirect("/login.aspx");
+
+        }
     }
 }

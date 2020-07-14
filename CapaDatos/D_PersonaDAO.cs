@@ -45,5 +45,43 @@ namespace CapaDatos
             }
         }
 
+        public E_PERSONAL buscarPersonal(int documento)
+        {
+            //E_PERSONA persona = new E_PERSONA();
+            E_PERSONAL personal = new E_PERSONAL();
+
+
+            using (var conexion = GetConnection())
+            {
+                conexion.Open();
+                using (var comand = new SqlCommand())
+                {
+                    comand.Connection = conexion;
+                    comand.CommandText = "SP_BUSCAR_PERSONA";
+                    comand.Parameters.AddWithValue("@PE_IDENTIFICACION", documento);
+                    comand.CommandType = CommandType.StoredProcedure;
+
+                    SqlDataReader reader = comand.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        /*persona.PE_IDPERSONA= reader.GetInt32(0);
+                        persona.PE_NOMBRE = reader.GetString(1);
+                        persona.PE_APELLIDOPAT = reader.GetString(2);
+                        persona.PE_APELLIDOMAT = reader.GetString(3);
+                        persona.PE_IDENTIFICACION = reader.GetString(4);
+                        persona.PE_FECHANAC = reader.GetDateTime(5) + "";
+                        persona.PE_TELEFONO = reader.GetString(6);
+                        persona.PE_DIRECCION = reader.GetString(7);*/
+                        personal.PER_IDPERSONAL = reader.GetInt32(8);
+
+                    }
+                    return personal;
+
+                }
+            }
+        }
+
+
     }
 }

@@ -150,7 +150,7 @@
             <section class="content">
                 <form id="form1" runat="server">
                     <div align="right">
-                        <asp:Button ID="btnCerrar" runat="server" CssClass="btn btn-danger" width="120px" text="Cerrar Sessión"/>
+                        <asp:Button ID="btnCerrar" runat="server" CssClass="btn btn-danger" width="120px" text="Cerrar Sessión" OnClick="btnCerrar_Click"/>
                     </div>
                     <div>
                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
