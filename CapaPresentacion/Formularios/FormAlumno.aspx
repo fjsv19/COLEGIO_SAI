@@ -5,7 +5,7 @@
     <section class="content-header">
         <h3 style="text-align:center"><b>DATOS DEL ALUMNO</b></h3>
     </section>
-    <section class="content" style="padding-bottom:220px">
+    <section class="content" style="padding-bottom:277px">
         <div class="row">
             <div class="col-md-6" style="margin-left:430px">
                 <div class="box box-primary">

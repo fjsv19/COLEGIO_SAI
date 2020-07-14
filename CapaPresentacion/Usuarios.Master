@@ -143,11 +143,14 @@
         <aside class="right-side">
             <section class="content-header">
                 <h1>
-                    <asp:Label ID="lblOpcionMenu" runat="server" Text="Panel General"></asp:Label>
+                    <asp:Label ID="lblOpcionMenu" runat="server" Text=""></asp:Label>
                 </h1>
             </section>
             <section class="content">
                 <form id="form1" runat="server">
+                    <div align="right">
+                        <asp:Button ID="btnCerrar" runat="server" CssClass="btn btn-danger" width="120px" text="Cerrar Sessión"/>
+                    </div>
                     <div>
                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                             <!-- AQUI CARGA EL DISEÑO DE LA PAGINA QUE HEREDA DE MASTER PAGE -->
