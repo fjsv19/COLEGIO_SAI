@@ -23,7 +23,7 @@
         }
 
         iframe {
-            display: block;
+            display: block; 
             overflow: auto;
             border: 0;
             margin: 0;
