@@ -136,6 +136,7 @@
                     <li class="active"><a href="FormAlumno.aspx"><i class="fa fa-user"></i><span>Perfil del Alumno</span></a></li>
                     <li><a href="#"><i class="fa fa-list"></i><span>Cursos</span></a></li>
                     <li><a href="#"><i class="fa fa-music"></i><span>Notas</span></a></li>
+                    <li><a href="FormMatriculaAlumno.aspx"><i class="fa fa-music"></i><span>Registrar Matricula</span></a></li>
                     <li><a href="/login.aspx"><i class="fa fa-th"></i><span>Cerrar Sesión</span></a></li>
                 </ul>
             </section>
