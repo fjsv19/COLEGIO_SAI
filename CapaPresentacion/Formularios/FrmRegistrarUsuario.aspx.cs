@@ -20,7 +20,7 @@ namespace login
         {
        
             if (txtNombre.Text != "" || txtApePa.Text != "" || txtApeMa.Text != "" || txtNumDoc.Text != "" || 
-                txtNaci.Text != "" || txtTelefono.Text != "" || txtDireccion.Text != "" || txtSexo.Text != "")
+                txtNaci.Text != "" || txtTelefono.Text != "" || txtDireccion.Text != "")
             {
                 N_Alumno n_alumno = new N_Alumno();
 
