@@ -12,6 +12,24 @@ namespace CapaPresentacion
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if (!IsPostBack)
+            {
+                if (Session["abrirSesion"] == null)
+                {
+                    if (Session["alumno"] == null)
+                    {
+                        Response.Redirect("/login.aspx");
+                    }
+                }
+            }
+
+        }
+
+        protected void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Session.Remove("abrirSesion");
+            Session.RemoveAll();
+            Response.Redirect("/login.aspx");
         }
     }
 }

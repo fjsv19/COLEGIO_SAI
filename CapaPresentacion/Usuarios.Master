@@ -136,7 +136,6 @@
                     <li class="active"><a href="FormAlumno.aspx"><i class="fa fa-user"></i><span>Perfil del Alumno</span></a></li>
                     <li><a href="#"><i class="fa fa-list"></i><span>Cursos</span></a></li>
                     <li><a href="#"><i class="fa fa-music"></i><span>Notas</span></a></li>
-                    <li><a href="/login.aspx"><i class="fa fa-th"></i><span>Cerrar Sesión</span></a></li>
                 </ul>
             </section>
         </aside>
@@ -149,7 +148,7 @@
             <section class="content">
                 <form id="form1" runat="server">
                     <div align="right">
-                        <asp:Button ID="btnCerrar" runat="server" CssClass="btn btn-danger" width="120px" text="Cerrar Sessión"/>
+                        <asp:Button ID="btnCerrar" runat="server" CssClass="btn btn-danger" width="120px" text="Cerrar Sessión" OnClick="btnCerrar_Click"/>
                     </div>
                     <div>
                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

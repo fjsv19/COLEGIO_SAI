@@ -16,7 +16,10 @@ namespace CapaPresentacion
             {
                 if (Session["abrirSesion"] == null)
                 {
-                    Response.Redirect("/login.aspx");
+                    if (Session["administrador"] == null)
+                    {
+                        Response.Redirect("/login.aspx");
+                    }
                 }
             }
 
@@ -25,6 +28,7 @@ namespace CapaPresentacion
         protected void btnCerrar_Click(object sender, EventArgs e)
         {
             Session.Remove("abrirSesion");
+            Session.RemoveAll();
             Response.Redirect("/login.aspx");
 
         }

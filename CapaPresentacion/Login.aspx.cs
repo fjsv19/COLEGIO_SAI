@@ -30,15 +30,17 @@ namespace CapaPresentacion
                     if (validacion == true)
                     {
 
-                        Session["abrirSesion"] = txtUsuario.Text;
-
                         if (UsuarioLoginCache.CN_IDCONSTANTE == 1) //ADMINISTRADOR
                         {
+                            Session["abrirSesion"] = txtUsuario.Text;
+                            Session["administrador"] = UsuarioLoginCache.CN_IDCONSTANTE;
                             Response.Redirect("Formularios/FormAdministrador.aspx");
                         }
 
                         if (UsuarioLoginCache.CN_IDCONSTANTE == 2) //ALUMNO
                         {
+                            Session["abrirSesion"] = txtUsuario.Text;
+                            Session["alumno"] = UsuarioLoginCache.CN_IDCONSTANTE;
                             Response.Redirect("Formularios/FormAlumno.aspx");
                         }
 
