@@ -31,13 +31,13 @@ namespace CapaDatos
 
                     while (reader.Read())
                     {
-                        persona.PE_NOMBRE = reader.GetString(0);
-                        persona.PE_APELLIDOPAT = reader.GetString(1);
-                        persona.PE_APELLIDOMAT = reader.GetString(2);
-                        persona.PE_IDENTIFICACION = reader.GetString(3);
-                        persona.PE_FECHANAC = reader.GetDateTime(4) + "";
-                        persona.PE_TELEFONO = reader.GetString(5);
-                        persona.PE_DIRECCION = reader.GetString(6);
+                        persona.pE_NOMBRE = reader.GetString(0);
+                        persona.pE_APELLIDOPAT = reader.GetString(1);
+                        persona.pE_APELLIDOMAT = reader.GetString(2);
+                        persona.pE_IDENTIFICACION = reader.GetString(3);
+                        persona.pE_FECHANAC = reader.GetDateTime(4) + "";
+                        persona.pE_TELEFONO = reader.GetString(5);
+                        persona.pE_DIRECCION = reader.GetString(6);
                     }
                     return persona;
 
@@ -73,7 +73,7 @@ namespace CapaDatos
                         persona.PE_FECHANAC = reader.GetDateTime(5) + "";
                         persona.PE_TELEFONO = reader.GetString(6);
                         persona.PE_DIRECCION = reader.GetString(7);*/
-                        personal.PER_IDPERSONAL = reader.GetInt32(8);
+                        personal.pER_IDPERSONAL = reader.GetInt32(8);
 
                     }
                     return personal;
