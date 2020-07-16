@@ -21,16 +21,16 @@ namespace CapaDatos
                 {
                     comand.Connection = conexion;
                     comand.CommandText = "SP_INSERTAR_PERSONA_ALUMNO";
-                    comand.Parameters.AddWithValue("@PE_NOMBRE", persona.PE_NOMBRE);
-                    comand.Parameters.AddWithValue("@PE_APELLIDOPAT", persona.PE_APELLIDOPAT);
-                    comand.Parameters.AddWithValue("@PE_APELLIDOMAT", persona.PE_APELLIDOMAT);
-                    comand.Parameters.AddWithValue("@PE_IDENTIFICACION", persona.PE_IDENTIFICACION);
-                    comand.Parameters.AddWithValue("@PE_FECHANAC", Convert.ToDateTime(persona.PE_FECHANAC));
-                    comand.Parameters.AddWithValue("@PE_TELEFONO", persona.PE_TELEFONO);
-                    comand.Parameters.AddWithValue("@PE_DIRECCION", persona.PE_DIRECCION);
-                    comand.Parameters.AddWithValue("@PE_SEXO", persona.PE_SEXO);
-                    comand.Parameters.AddWithValue("@PE_ESTADO", persona.PE_ESTADO);
-                    comand.Parameters.AddWithValue("@PER_IDAPODERADO", alumno.PER_IDAPODERADO);
+                    comand.Parameters.AddWithValue("@PE_NOMBRE", persona.pE_NOMBRE);
+                    comand.Parameters.AddWithValue("@PE_APELLIDOPAT", persona.pE_APELLIDOPAT);
+                    comand.Parameters.AddWithValue("@PE_APELLIDOMAT", persona.pE_APELLIDOMAT);
+                    comand.Parameters.AddWithValue("@PE_IDENTIFICACION", persona.pE_IDENTIFICACION);
+                    comand.Parameters.AddWithValue("@PE_FECHANAC", Convert.ToDateTime(persona.pE_FECHANAC));
+                    comand.Parameters.AddWithValue("@PE_TELEFONO", persona.pE_TELEFONO);
+                    comand.Parameters.AddWithValue("@PE_DIRECCION", persona.pE_DIRECCION);
+                    comand.Parameters.AddWithValue("@PE_SEXO", persona.pE_SEXO);
+                    comand.Parameters.AddWithValue("@PE_ESTADO", persona.pE_ESTADO);
+                    comand.Parameters.AddWithValue("@PER_IDAPODERADO", alumno.pER_IDAPODERADO);
                     comand.Parameters.AddWithValue("@US_IDUSUARIO", UsuarioLoginCache.US_IDUSUARIO);
 
                     comand.CommandType = CommandType.StoredProcedure;

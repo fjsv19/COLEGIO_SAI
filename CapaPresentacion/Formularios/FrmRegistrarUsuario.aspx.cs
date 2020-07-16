@@ -65,9 +65,9 @@ namespace login
 
                 e_personal = n_persona.buscarPersonal(Convert.ToInt32(txtApoderadoDoc.Text));
 
-                if (e_personal.PER_IDPERSONAL != 0)
+                if (e_personal.pER_IDPERSONAL != 0)
                 {
-                    txtApoderado.Text = e_personal.PER_IDPERSONAL+ "";
+                    txtApoderado.Text = e_personal.pER_IDPERSONAL+ "";
                     txtApoderadoDoc.Text = "";
                 } else {
                     Response.Write("<script>alert('APODERADO NO ESXISTE, REGISTRE UNO')</script>");

@@ -23,12 +23,12 @@ namespace login
 
             e_persona = n_persona.perfilPersona();
 
-            txtNombres.Text = e_persona.PE_NOMBRE;
-            txtApellidos.Text = e_persona.PE_APELLIDOPAT + " " + e_persona.PE_APELLIDOMAT;
-            txtNumDoc.Text = e_persona.PE_IDENTIFICACION + "";
-            txtFechaNaci.Text = e_persona.PE_FECHANAC + "";
-            txtTelefono.Text = e_persona.PE_TELEFONO + "";
-            txtDireccion.Text = e_persona.PE_DIRECCION;
+            txtNombres.Text = e_persona.pE_NOMBRE;
+            txtApellidos.Text = e_persona.pE_APELLIDOPAT + " " + e_persona.pE_APELLIDOMAT;
+            txtNumDoc.Text = e_persona.pE_IDENTIFICACION + "";
+            txtFechaNaci.Text = e_persona.pE_FECHANAC + "";
+            txtTelefono.Text = e_persona.pE_TELEFONO + "";
+            txtDireccion.Text = e_persona.pE_DIRECCION;
         }
     }
 }

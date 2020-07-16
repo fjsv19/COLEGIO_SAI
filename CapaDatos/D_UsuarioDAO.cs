@@ -22,8 +22,8 @@ namespace CapaDatos
                 {
                     comand.Connection = conexion;
                     comand.CommandText = "SP_VALIDAR_USUARIO";
-                    comand.Parameters.AddWithValue("@USUARIO", usuario.US_USUARIO);
-                    comand.Parameters.AddWithValue("@CONTRASENIA", usuario.US_CONTRASENIA);
+                    comand.Parameters.AddWithValue("@USUARIO", usuario.uS_USUARIO);
+                    comand.Parameters.AddWithValue("@CONTRASENIA", usuario.uS_CONTRASENIA);
                     comand.CommandType = CommandType.StoredProcedure;
 
                     SqlDataReader reader = comand.ExecuteReader();

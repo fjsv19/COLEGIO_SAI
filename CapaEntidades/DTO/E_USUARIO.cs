@@ -8,12 +8,36 @@ namespace CapaEntidades.DTO
 {
     public class E_USUARIO
     {
-        public int US_IDUSUARIO { get; set; }
-        public String US_USUARIO { get; set; }
-        public String US_CONTRASENIA { get; set; }
-        public E_CONSTANTE CN_IDCONSTANTE { get; set; }
-        public E_PERSONA PE_IDPERSONA { get; set; }
-
+        private int US_IDUSUARIO;
+        private String US_USUARIO;
+        private String US_CONTRASENIA;
+        private E_CONSTANTE CN_IDCONSTANTE;
+        private E_PERSONA PE_IDPERSONA;
+        public int uS_IDUSUARIO
+        {
+            get { return US_IDUSUARIO; }
+            set { US_IDUSUARIO = value; }
+        }
+        public string uS_USUARIO
+        {
+            get { return US_USUARIO; }
+            set { US_USUARIO = value; }
+        }
+        public string uS_CONTRASENIA
+        {
+            get { return US_CONTRASENIA; }
+            set { US_CONTRASENIA = value; }
+        }
+        public E_CONSTANTE cN_IDCONSTANTE
+        {
+            get { return CN_IDCONSTANTE; }
+            set { CN_IDCONSTANTE = value; }
+        }
+        public E_PERSONA pE_IDPERSONA
+        {
+            get { return PE_IDPERSONA; }
+            set { PE_IDPERSONA = value; }
+        }
         public E_USUARIO()
         {
         }

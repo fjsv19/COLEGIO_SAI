@@ -8,10 +8,24 @@ namespace CapaEntidades.DTO
 {
     public class E_CONSTANTE
     {
-        public int CN_IDCONSTANTE { get; set; }
-        public String CN_NOMBRE { get; set; }
-        public String CN_CATEGORIA { get; set; }
-
+        private int CN_IDCONSTANTE;
+        private String CN_NOMBRE;
+        private String CN_CATEGORIA;
+        public int cN_IDCONSTANTE
+        {
+            get { return CN_IDCONSTANTE; }
+            set { CN_IDCONSTANTE = value; }
+        }
+        public String cN_NOMBRE
+        {
+            get { return CN_NOMBRE; }
+            set { CN_NOMBRE = value; }
+        }
+        public String cN_CATEGORIA
+        {
+            get { return CN_CATEGORIA; }
+            set { CN_CATEGORIA = value; }
+        }
         public E_CONSTANTE()
         {
         }

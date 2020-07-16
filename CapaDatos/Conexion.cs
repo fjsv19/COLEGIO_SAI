@@ -13,7 +13,9 @@ namespace CapaDatos
 
         public Conexion()
         {
-            conexionString = "Server=FJSV_PC; DataBase=COLEGIO_SAI; integrated security=true; User ID=sa; Password=sa";
+            //conexionString = "Server=JHONSEBASTYJ; DataBase=COLEGIO_SAI; integrated security=true; User ID=sa; Password=sa";
+            conexionString = "Server=DESKTOP-3GC35CO\\EFI_SERVER; DataBase=COLEGIO_SAI; integrated security=true; User ID=sa; Password=sa";
+
         }
 
         protected SqlConnection GetConnection()
