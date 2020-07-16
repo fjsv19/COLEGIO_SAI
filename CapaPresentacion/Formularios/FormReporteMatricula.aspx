@@ -42,7 +42,7 @@
               <td>Serrato Vilcherres</td>
               <td>02/02/2020</td>
               <td>
-                  <asp:DropDownList ID="txtSexo" runat="server" CssClass="form-control">
+                  <asp:DropDownList ID="txtEstado" runat="server" CssClass="form-control">
                     <asp:ListItem Selected="true" Value="P">Pendiente</asp:ListItem>
                     <asp:ListItem Selected="False" Value="A">Activo</asp:ListItem>
                     <asp:ListItem Selected="False" Value="E">Eliminado</asp:ListItem>
