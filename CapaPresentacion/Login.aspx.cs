@@ -70,11 +70,5 @@ namespace CapaPresentacion
             lblError.Text = " " + msg;
         }
 
-        public void cerrarSession()
-        {
-            txtUsuario.Text = "";
-            txtContrasenia.Text = "";
-        }
-
     }
 }

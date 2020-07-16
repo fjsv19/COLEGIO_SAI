@@ -31,5 +31,6 @@ namespace CapaPresentacion
             Session.RemoveAll();
             Response.Redirect("/login.aspx");
         }
+
     }
 }
