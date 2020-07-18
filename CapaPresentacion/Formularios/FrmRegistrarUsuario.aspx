@@ -39,7 +39,7 @@
                         </div>
                         <div class="form-group">
                             <asp:DropDownList ID="txtSexo" runat="server" CssClass="form-control">
-                                <asp:ListItem Selected="true">Seleccione</asp:ListItem>
+                                <asp:ListItem Selected="true">- Seleccione -</asp:ListItem>
                                 <asp:ListItem Selected="False" Value="M">Masculino</asp:ListItem>
                                 <asp:ListItem Selected="False" Value="F">Femenino</asp:ListItem>
                             </asp:DropDownList>
@@ -63,7 +63,7 @@
                             <asp:TextBox ID="txtDireccion" runat="server" CssClass="form-control"></asp:TextBox>
                         </div>
                         <div class="form-group">
-                            <label>Telefono:</label>
+                            <label>Télefono:</label>
                         </div>
                         <div class="form-group">
                             <asp:TextBox ID="txtTelefono" runat="server" CssClass="form-control"></asp:TextBox>

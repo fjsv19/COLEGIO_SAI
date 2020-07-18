@@ -36,5 +36,10 @@ namespace CapaEntidades.DTO
             CN_NOMBRE = cN_NOMBRE;
             CN_CATEGORIA = cN_CATEGORIA;
         }
+
+        public E_CONSTANTE(int cN_IDCONSTANTE)
+        {
+            CN_IDCONSTANTE = cN_IDCONSTANTE;
+        }
     }
 }
