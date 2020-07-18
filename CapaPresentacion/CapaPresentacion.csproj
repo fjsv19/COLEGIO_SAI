@@ -80,6 +80,7 @@
     <Content Include="Formularios\FormAdministrador.aspx" />
     <Content Include="Formularios\FormAlumno.aspx" />
     <Content Include="Formularios\FormMatriculaAlumno.aspx" />
+    <Content Include="Formularios\FormReporteAlumno.aspx" />
     <Content Include="Formularios\FormReporteMatricula.aspx" />
     <Content Include="Formularios\FrmRegistrarUsuario.aspx" />
     <Content Include="Formularios\GestionarAutoridad.aspx" />
@@ -247,6 +248,13 @@
     </Compile>
     <Compile Include="Formularios\FormMatriculaAlumno.aspx.designer.cs">
       <DependentUpon>FormMatriculaAlumno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormReporteAlumno.aspx.cs">
+      <DependentUpon>FormReporteAlumno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormReporteAlumno.aspx.designer.cs">
+      <DependentUpon>FormReporteAlumno.aspx</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FormReporteMatricula.aspx.cs">
       <DependentUpon>FormReporteMatricula.aspx</DependentUpon>
