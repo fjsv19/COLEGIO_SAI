@@ -1,4 +1,4 @@
-﻿|<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="CapaPresentacion.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="CapaPresentacion.Login" %>
 
 <!DOCTYPE html>
 
@@ -10,7 +10,6 @@
     <link href="Bootstrap/Style.css" rel="stylesheet" />
 </head>
 <body class="bg-black">
-
 	<div class="container h-100">
 		<div class="d-flex justify-content-center h-100">
 			<div class="user_card">
