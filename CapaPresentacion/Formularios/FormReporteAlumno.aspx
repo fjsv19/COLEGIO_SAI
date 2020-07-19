@@ -34,7 +34,7 @@
         <div class="col-md-12">
             <div class="box box-primary">
                 <div class="box-body table-responsive">
-                    <table class="table table-bordered table-hover">
+                    <table id="tbl_alumnos" class="table table-bordered table-hover">
                         <thead>
                             <tr class="bg-primary">  
                                 <th data-defaultsign="_19"> Nombres</th>  
@@ -46,7 +46,7 @@
                                 <th data-defaultsort="disabled">Actualizar</th>  
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="tbl_body_table">
                             <tr>
                                 <td>John</td>
                                 <td>Doe</td>
@@ -55,9 +55,7 @@
                                 <td>12-12-1997</td>
                                 <td>Av.Los Portales</td>
                                 <td>
-                                    <!-- --> <button runat="server" id="Button1" title="Editar">
-                                    <i class="fas fa-pencil-alt"></i>
-                                    </button>        
+                                    <asp:Button ID="btnActualizar" runat="server" CssClass="btn btn-info" Width="100px" Text="Actualizar"/>      
                                 </td>
                             </tr>
                         </tbody>
