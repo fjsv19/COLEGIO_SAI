@@ -60,6 +60,19 @@
                             </tr>
                         </tbody>
                     </table>
+
+                    <asp:GridView class="table table-bordered table-hover" ID="gvwDatos" runat="server" AutoGenerateColumns="False">
+                        <Columns>
+                            <asp:BoundField HeaderText="Nombres" DataField="gvwNombres"/>
+                            <asp:BoundField HeaderText="Apellidos" DataField="gvwApellidos" />
+                            <asp:BoundField HeaderText="Sexo" DataField="gvwSexo" />
+                            <asp:BoundField HeaderText="Dni" DataField="gvwDni" />
+                            <asp:BoundField HeaderText="Nacimiento" DataField="gvwNacimiento" />
+                            <asp:BoundField HeaderText="Direccion" DataField="gvwDireccion" />                       
+                            <asp:ButtonField HeaderText="Editar" ButtonType="Button" CommandName="Edit" Text="Editar" />
+                            <asp:ButtonField HeaderText="Eliminar" ButtonType="Button" CommandName="Update" Text="Botón" />
+                        </Columns>
+                    </asp:GridView>
                 </div>
             </div>
         </div>
