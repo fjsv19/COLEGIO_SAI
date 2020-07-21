@@ -30,8 +30,6 @@ namespace login
 
                 n_alumno.insertarAlumno(e_persona, e_alumno);
 
-                Response.Write("<script>alert('ALUMNO REGISTRADO CON EXITO')</script>");
-
                 limpiarCampos();
             } else
             {
@@ -95,6 +93,26 @@ namespace login
                 return null;
             }
             return Lista;
+        }
+
+        [WebMethod]
+        public static bool ActualizarAlumno2(String id, String nom, String direccion)
+        {
+            bool ok = true;
+            String s = id + " " + direccion + nom;
+
+            return ok;
+        }
+        [WebMethod]
+        public static void ActualizarAlumno(String id, String nom, String pat, String mat, String dni, String fecha, String tel, String direccion)
+        {
+            bool ok;
+            N_Alumno n_alumno = new N_Alumno();
+
+            E_PERSONA e_persona = new E_PERSONA(Convert.ToInt32(id), nom, pat, mat, dni, fecha, tel, direccion, "A");
+
+            n_alumno.actualizarAlumno(e_persona);
+
         }
 
     }

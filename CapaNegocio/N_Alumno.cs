@@ -20,5 +20,10 @@ namespace CapaNegocio
         {
             return alumnoDAO.listarAlumnos();
         }
+
+        public void actualizarAlumno(E_PERSONA persona)
+        {
+            alumnoDAO.actualizarAlumno(persona);
+        }
     }
 }

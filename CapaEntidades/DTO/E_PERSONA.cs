@@ -85,7 +85,17 @@ namespace CapaEntidades.DTO
             PE_ESTADO = pE_ESTADO;
         }
 
-        
-        
+        public E_PERSONA(int pE_IDPERSONA, string pE_NOMBRE, string pE_APELLIDOPAT, string pE_APELLIDOMAT, string pE_IDENTIFICACION, string pE_FECHANAC, string pE_TELEFONO, string pE_DIRECCION, string pE_ESTADO)
+        {
+            PE_IDPERSONA = pE_IDPERSONA;
+            PE_NOMBRE = pE_NOMBRE;
+            PE_APELLIDOPAT = pE_APELLIDOPAT;
+            PE_APELLIDOMAT = pE_APELLIDOMAT;
+            PE_IDENTIFICACION = pE_IDENTIFICACION;
+            PE_FECHANAC = pE_FECHANAC;
+            PE_TELEFONO = pE_TELEFONO;
+            PE_DIRECCION = pE_DIRECCION;
+            PE_ESTADO = pE_ESTADO;
+        }
     }
 }
