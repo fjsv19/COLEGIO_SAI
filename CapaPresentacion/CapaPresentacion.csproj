@@ -83,6 +83,8 @@
     <Content Include="Formularios\FormAdministrador.aspx" />
     <Content Include="Formularios\FormAlumno.aspx" />
     <Content Include="Formularios\FormMatriculaAlumno.aspx" />
+    <Content Include="Formularios\FormNivelAcademico.aspx" />
+    <Content Include="Formularios\FormReserva.aspx" />
     <Content Include="Formularios\FrmRegistrarUsuario.aspx" />
     <Content Include="Formularios\GestionarAutoridad.aspx" />
     <Content Include="Formularios\RegistrarMatricula.aspx" />
@@ -250,6 +252,20 @@
     </Compile>
     <Compile Include="Formularios\FormMatriculaAlumno.aspx.designer.cs">
       <DependentUpon>FormMatriculaAlumno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormNivelAcademico.aspx.cs">
+      <DependentUpon>FormNivelAcademico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormNivelAcademico.aspx.designer.cs">
+      <DependentUpon>FormNivelAcademico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormReserva.aspx.cs">
+      <DependentUpon>FormReserva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormReserva.aspx.designer.cs">
+      <DependentUpon>FormReserva.aspx</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FormularioRegistroAutoridades.Master.cs">
       <DependentUpon>FormularioRegistroAutoridades.Master</DependentUpon>

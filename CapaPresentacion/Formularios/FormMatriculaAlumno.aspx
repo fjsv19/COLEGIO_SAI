@@ -6,7 +6,7 @@
         <h3 style="text-align:center"><b>REGISTRO DE MATRICULA</b></h3>
     </section>
 
-    <section class="content" style="padding-bottom:101px">
+    <section class="content" style="padding-bottom:17%">
         <div class="row">
             <!-- ............................................................. -->
             <div class="col-md-6">

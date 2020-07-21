@@ -113,8 +113,7 @@
                             <thead>
                                 <tr>
                                     <th>Nombres</th>
-                                    <th>Apellido Paterno</th>
-                                    <th>Apellido Materno</th>
+                                    <th>Apellidos</th>
                                     <th>Identificación</th>
                                     <th>Fecha de Nacimiento</th>
                                     <th>Teléfono</th>

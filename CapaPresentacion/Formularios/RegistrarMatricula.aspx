@@ -6,7 +6,7 @@
         <h3 style="text-align:center"><b>REGISTRO DE MATRICULA</b></h3>
     </section>
 
-    <section class="content" style="padding-bottom:1px">
+    <section class="content" style="padding-bottom:5.5%">
         <div class="row">
 
             <div class="col-md-12">
@@ -43,16 +43,10 @@
                         </div>
 
                         <div class="form-group">
-                            <label>Numero Documento</label>
+                            <label>DNI</label>
                         </div>
                         <div class="form-group">
                             <asp:TextBox ID="txtNumeroDoc" runat="server" Text="" CssClass="form-control"></asp:TextBox>
-                        </div>
-                        <div class="form-group">
-                            <label>Fecha</label>
-                        </div>
-                        <div class="form-group">
-                            <asp:TextBox ID="txtFechaMatricula" runat="server" Text="" CssClass="form-control"></asp:TextBox>
                         </div>
                     </div>
                 </div>
@@ -75,22 +69,11 @@
                         <div class="form-group">
                             <asp:TextBox ID="txtSeccion" runat="server" Text="" CssClass="form-control"></asp:TextBox>
                         </div>
-
                         <div class="form-group">
-                            <label>Turno</label>
+                            <label>Fecha</label>
                         </div>
                         <div class="form-group">
-                            <asp:TextBox ID="txtTurno" runat="server" Text="" CssClass="form-control"></asp:TextBox>
-                        </div>
-                        <div class="form-group">
-                            <label>Estado</label>
-                        </div>
-                        <div class="form-group">
-                            <asp:DropDownList ID="ddlSexo" runat="server" CssClass="form-control">
-                                <asp:ListItem Selected="true">- Seleccione -</asp:ListItem>
-                                <asp:ListItem Selected="false">Pendiente</asp:ListItem>
-                                <asp:ListItem Selected="False">Cancelado</asp:ListItem>
-                            </asp:DropDownList>
+                            <asp:TextBox ID="txtFechaMatricula" runat="server" Text="" CssClass="form-control"></asp:TextBox>
                         </div>
                     </div>
                 </div>
@@ -116,16 +99,17 @@
             <div class="col-xs-12">
                 <div class="box box-primary">
                     <div class="box-header">
-                        <h3 class="box-title">Lista de Matrículas</h3>
+                        <h3 class="box-title">Lista de Matrículas Reservadas</h3>
                     </div>
                     <div class="box-body table-responsive">
-                        <table id="tbl_Matriculas" class="table table-bordered">
+                        <table id="tbl_MatriculasR" class="table table-bordered">
                             <thead>
                                 <tr>
                                     <th>Fecha</th>
+                                    <th>Nombre</th>
+                                    <th>Apellidos</th>
+                                    <th>Id Reservación</th>
                                     <th>Estado</th>
-                                    <th>Apellido Paterno</th>
-                                    <th>Acciones</th>
                                 </tr>
                             </thead>
                             <tbody id="tbl_body_table_M">
