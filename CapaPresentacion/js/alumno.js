@@ -68,11 +68,12 @@ function updateDataAjax() {
             }*/
         }
     });
+
 }
 
-function deleteDataAjax() {
+function deleteDataAjax(data) {
 
-    var obj = JSON.stringify({ id: JSON.stringify(data[0] });
+    var obj = JSON.stringify({ id: JSON.stringify(data) });
 
     $.ajax({
         type: "POST",
@@ -111,7 +112,7 @@ $(document).on('click', '.btn-delete', function (e) {
     var row = $(this).parent().parent()[0];
     var data = tabla.fnGetData(row);
 
-    deleteDataAjax();
+    deleteDataAjax(data[0]);
     //segundo método: enviar el codigo del paciente al servidor y eliminarlo, renderizar el datatable
     // paso 1: enviar el id al servidor por medio de ajax
     //deleteDataAjax(dataRow[0]);
@@ -139,6 +140,9 @@ function fillModalData() {
 $("#btnactualizar").click(function (e) {
     e.preventDefault();
     updateDataAjax();
+
+
+    //sendDataAjax();
 });
 
 // Llamando a la funcion de ajax al cargar el documento
