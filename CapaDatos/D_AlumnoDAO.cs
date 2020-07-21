@@ -104,5 +104,25 @@ namespace CapaDatos
             }
             
         }
+
+        public void eliminarAlumno(E_PERSONA persona)
+        {
+
+            using (var conexion = GetConnection())
+            {
+
+                conexion.Open();
+                using (var comand = new SqlCommand())
+                {
+                    comand.Connection = conexion;
+                    comand.CommandText = "SP_ELIMINAR_PERSONA";
+                    comand.Parameters.AddWithValue("@PE_IDPERSONA", persona.pE_IDPERSONA);
+
+                    comand.CommandType = CommandType.StoredProcedure;
+                    comand.ExecuteNonQuery();
+                }
+            }
+
+        }
     }
 }

@@ -97,5 +97,10 @@ namespace CapaEntidades.DTO
             PE_DIRECCION = pE_DIRECCION;
             PE_ESTADO = pE_ESTADO;
         }
+
+        public E_PERSONA(int pE_IDPERSONA)
+        {
+            PE_IDPERSONA = pE_IDPERSONA;
+        }
     }
 }

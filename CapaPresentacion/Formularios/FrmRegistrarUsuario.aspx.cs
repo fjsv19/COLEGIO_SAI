@@ -106,5 +106,14 @@ namespace login
 
         }
 
+        public static void EliminarAlumno(String id)
+        {
+            N_Alumno n_alumno = new N_Alumno();
+
+            E_PERSONA e_persona = new E_PERSONA(Convert.ToInt32(id);
+
+            n_alumno.actualizarAlumno(e_persona);
+
+        }
     }
 }

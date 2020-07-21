@@ -25,5 +25,10 @@ namespace CapaNegocio
         {
             alumnoDAO.actualizarAlumno(persona);
         }
+
+        public void eliminarAlumno(E_PERSONA persona)
+        {
+            alumnoDAO.eliminarAlumno(persona);
+        }
     }
 }

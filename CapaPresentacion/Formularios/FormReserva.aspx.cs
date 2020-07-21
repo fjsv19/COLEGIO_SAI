@@ -33,6 +33,8 @@ namespace CapaPresentacion.Formularios
             N_RESERVA_MATRICULA reserva = new N_RESERVA_MATRICULA();
 
             reserva.insertarReserva(Convert.ToInt32(txtDocumento.Text));
+
+            Response.Write("<script>alert('Reservacion hecha correctamente')</script>");
         }
     }
 }
