@@ -15,5 +15,10 @@ namespace CapaNegocio
         {
             alumnoDAO.insertarAlumno(persona, alumno);
         }
+
+        public List<E_PERSONA> listarAlumnos()
+        {
+            return alumnoDAO.listarAlumnos();
+        }
     }
 }

@@ -39,20 +39,37 @@ namespace CapaDatos
             }
         }
 
-        public List<E_ALUMNO> listarAlumnos()
+        public List<E_PERSONA> listarAlumnos()
         {
-            List<E_ALUMNO> Lista = new List<E_ALUMNO>();
+            List<E_PERSONA> Lista = new List<E_PERSONA>();
             using (var conexion = GetConnection())
             {
                 conexion.Open();
                 using (var comand = new SqlCommand())
                 {
                     comand.Connection = conexion;
-                    comand.CommandText = "SP_MOSTRAR_PERSONA";
-                    comand.Parameters.AddWithValue("@PE_IDPERSONA", UsuarioLoginCache.PE_IDPERSONA);
-
+                    comand.CommandText = "SP_MOSTRAR_ALUMNO";
                     comand.CommandType = CommandType.StoredProcedure;
-                    comand.ExecuteNonQuery();
+
+                    using(SqlDataReader dr = comand.ExecuteReader())
+                    {
+                        while(dr.Read())
+                        {
+                            E_PERSONA alumno = new E_PERSONA();
+                            alumno.pE_IDPERSONA = Convert.ToInt32(dr["ID"]);
+                            alumno.pE_NOMBRE = dr["NOMBRE"].ToString();
+                            alumno.pE_APELLIDOPAT = dr["APELLIDO PAT"].ToString();
+                            alumno.pE_APELLIDOMAT = dr["APELLIDO MAT"].ToString();
+                            alumno.pE_IDENTIFICACION = dr["IDENTIFICACION"].ToString();
+                            alumno.pE_FECHANAC = dr["FECHA NAC"].ToString();
+                            alumno.pE_TELEFONO = dr["TELEFONO"].ToString();
+                            alumno.pE_DIRECCION = dr["DIRECCION"].ToString();
+
+                            Lista.Add(alumno);
+                        }
+                        
+                    }
+
                 }
             }
             return Lista;
