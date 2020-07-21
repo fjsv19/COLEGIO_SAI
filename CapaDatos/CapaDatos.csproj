@@ -43,8 +43,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="D_AlumnoDAO.cs" />
+    <Compile Include="D_Documento_Alumno.cs" />
     <Compile Include="D_PersonaDAO.cs" />
     <Compile Include="D_PersonalDAO.cs" />
+    <Compile Include="D_RESERVA_MATRICULA.cs" />
     <Compile Include="D_UsuarioDAO.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

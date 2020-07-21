@@ -11,6 +11,10 @@
                 <div class="box box-primary">
                     <div class="box-body">
                         <div class="form-group">
+                            <label>ID DOCUMENTO:</label>
+                            <div class="form-group">
+                                <asp:TextBox ID="txtDocumento" runat="server" Text="" CssClass="form-control" Enabled="false"></asp:TextBox>
+                            </div>
                             <label>Grado:</label>
                             <div class="form-group">
                                 <asp:TextBox ID="txtGrado" runat="server" Text="" CssClass="form-control"></asp:TextBox>
@@ -29,7 +33,7 @@
                 <table>
                     <tr>
                         <td>
-                            <asp:Button ID="btnReserva" runat="server" CssClass="btn btn-primary" width="200px" text="Generar Reservación" />
+                            <asp:Button ID="btnReserva" runat="server" CssClass="btn btn-primary" width="200px" text="Generar Reservación" OnClick="btnReserva_Click" />
                         </td>
                         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                         <td>

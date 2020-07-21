@@ -82,6 +82,35 @@ namespace CapaDatos
             }
         }
 
+        public E_PERSONA buscarAlumno(int documento)
+        {
+            E_PERSONA persona = new E_PERSONA();
+
+            using (var conexion = GetConnection())
+            {
+                conexion.Open();
+                using (var comand = new SqlCommand())
+                {
+                    comand.Connection = conexion;
+                    comand.CommandText = "SP_BUSCAR_ALUMNO";
+                    comand.Parameters.AddWithValue("@PE_IDENTIFICACION", documento);
+                    comand.CommandType = CommandType.StoredProcedure;
+
+                    SqlDataReader reader = comand.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        persona.pE_IDPERSONA = reader.GetInt32(0);
+                        persona.pE_NOMBRE = reader.GetString(1);
+                        persona.pE_APELLIDOPAT = reader.GetString(2);
+                        persona.pE_APELLIDOMAT = reader.GetString(3);
+
+                    }
+                    return persona;
+
+                }
+            }
+        }
 
     }
 }

@@ -133,11 +133,9 @@
                     </div>
                 </div>
                 <ul class="sidebar-menu">
-                    <li class="active"><a href="FormAlumno.aspx"><i class="fa fa-user"></i><span>Perfil del Alumno</span></a></li>
-                    <li><a href="FormNivelAcademico.aspx"><i class="fa fa-th"></i><span>Nivel Académico</span></a></li>
+                    <li class="active"><a href="FormAlumno.aspx"><i class="fa fa-user"></i><span>Perfil del Alumno</span></a></li>                    
                     <li><a href="#"><i class="fa fa-list"></i><span>Cursos</span></a></li>
                     <li><a href="#"><i class="fa fa-music"></i><span>Notas</span></a></li>
-                    <li><a href="FormMatriculaAlumno.aspx"><i class="fa fa-th"></i><span>Registrar Matricula</span></a></li>
                     <li><a href="FormReserva.aspx"><i class="fa fa-th"></i><span>Trámites</span></a></li>
                 </ul>
             </section>

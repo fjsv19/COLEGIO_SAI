@@ -31,5 +31,9 @@ namespace CapaEntidades.DTO
         {
             PER_IDAPODERADO = pER_IDAPODERADO;
         }
+
+        public E_ALUMNO()
+        {
+        }
     }
 }

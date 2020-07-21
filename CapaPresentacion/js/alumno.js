@@ -61,11 +61,11 @@ function updateDataAjax() {
         },
         success: function (response) {
             console.log(response);
-            if (response.d) {
+            /*if (response.d) {
                 alert("Registro actualizado de manera correcta.");
             } else {
                 alert("No se pudo actualizar el registro.");
-            }
+            }*/
         }
     });
 }

@@ -9,35 +9,59 @@ namespace CapaEntidades.DTO
     public class E_DOCUMENTO_ALUMNO
     {
         private int DA_IDDOCUMENTO;
-        private E_ANIO_ELECTIVO AN_IDANIOL;
-        private E_GRADO GR_IDGRADO;
-        private E_SECCION SE_IDSECCION;
-        private E_ALUMNO AL_IDALUMNO;
+        private int AN_IDANIOL;
+        private int GR_IDGRADO;
+        private int SE_IDSECCION;
+        private int AL_IDALUMNO;
+        private String GR_GRADO;
+        private String SE_SECCION;
+
+        public String gR_GRADO
+        {
+            get { return GR_GRADO; }
+            set { GR_GRADO = value; }
+        }
+        public String sE_SECCION
+        {
+            get { return SE_SECCION; }
+            set { SE_SECCION = value; }
+        }
         public int dA_IDDOCUMENTO
         {
             get { return DA_IDDOCUMENTO; }
             set { DA_IDDOCUMENTO = value; }
         }
-        public E_ANIO_ELECTIVO aN_IDANIOL
+        public int aN_IDANIOL
         {
             get { return AN_IDANIOL; }
             set { AN_IDANIOL = value; }
         }
-        public E_GRADO gR_IDGRADO
+        public int gR_IDGRADO
         {
             get { return GR_IDGRADO; }
             set { GR_IDGRADO = value; }
         }
-        public E_SECCION sE_IDSECCION
+        public int sE_IDSECCION
         {
             get { return SE_IDSECCION; }
             set { SE_IDSECCION = value; }
         }
-        public E_ALUMNO aL_IDALUMNO
+        public int aL_IDALUMNO
         {
             get { return AL_IDALUMNO; }
             set { AL_IDALUMNO = value; }
         }
 
+        public E_DOCUMENTO_ALUMNO(int aN_IDANIOL, int gR_IDGRADO, int sE_IDSECCION, int aL_IDALUMNO)
+        {
+            AN_IDANIOL = aN_IDANIOL;
+            GR_IDGRADO = gR_IDGRADO;
+            SE_IDSECCION = sE_IDSECCION;
+            AL_IDALUMNO = aL_IDALUMNO;
+        }
+
+        public E_DOCUMENTO_ALUMNO()
+        {
+        }
     }
 }

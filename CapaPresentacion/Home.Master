@@ -137,7 +137,8 @@
                     <li class="active"><a href="FormAdministrador.aspx"><i class="fa fa-user"></i><span>Perfil Administrador</span></a></li>
                     <li><a href="FrmRegistrarUsuario.aspx"><i class="fa fa-th"></i><span>Registrar Alumno</span></a></li>
                     <li><a href="GestionarAutoridad.aspx"><i class="fa fa-th"></i><span>Registrar Autoridad</span></a></li>
-                    <li><a href="RegistrarMatricula.aspx"><i class="fa fa-th"></i><span>Registrar Matricula</span></a></li>                  
+                    <li><a href="RegistrarMatricula.aspx"><i class="fa fa-th"></i><span>Registrar Matricula</span></a></li>  
+                    <li><a href="FormNivelAcademico.aspx"><i class="fa fa-th"></i><span>Nivel Académico</span></a></li>
                 </ul>
             </section>
         </aside>
@@ -167,7 +168,5 @@
     <script src="//code.jquery.com/ui/1.11.1/jquery-ui.min.js" type="text/javascript"></script>
     <script src="js/AdminLTE/app.js" type="text/javascript"></script>
 
-    <script src="js/plugins/datatables/jquery.dataTables.js"></script>
-    <script src="js/plugins/datatables/dataTables.bootstrap.js"></script>
     <asp:ContentPlaceHolder ID="footer" runat="server"></asp:ContentPlaceHolder> 
 </html>

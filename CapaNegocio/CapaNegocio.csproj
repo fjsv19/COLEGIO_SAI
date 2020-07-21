@@ -42,8 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="N_Alumno.cs" />
+    <Compile Include="N_Documento_Alumno.cs" />
     <Compile Include="N_Persona.cs" />
     <Compile Include="N_Personal.cs" />
+    <Compile Include="N_RESERVA_MATRICULA.cs" />
     <Compile Include="N_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

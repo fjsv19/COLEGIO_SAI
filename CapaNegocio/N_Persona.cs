@@ -22,5 +22,10 @@ namespace CapaNegocio
         {
             return personaDAO.buscarPersonal(documento);
         }
+
+        public E_PERSONA buscarAlumno(int documento)
+        {
+            return personaDAO.buscarAlumno(documento);
+        }
     }
 }
