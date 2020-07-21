@@ -131,3 +131,8 @@
         </div>
     </section>
 </asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="server">
+    <script src="../js/alumno.js"></script>
+    <script src="../js/plugins/datatables/dataTables.bootstrap.js"></script>
+    <script src="../js/plugins/datatables/jquery.dataTables.js"></script>
+</asp:Content>

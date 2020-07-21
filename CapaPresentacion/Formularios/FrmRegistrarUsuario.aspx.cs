@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -79,5 +80,22 @@ namespace login
                 Response.Write("<script>alert('CAMPO VACIO')</script>");
             }
         }
+
+        [WebMethod]
+        public static List<E_PERSONA> ListarAlumnos()
+        {
+            List<E_PERSONA> Lista = null;
+            N_Alumno n_alumno = new N_Alumno();
+
+            try
+            {
+                Lista = n_alumno.listarAlumnos();
+            } catch
+            {
+                return null;
+            }
+            return Lista;
+        }
+
     }
 }
