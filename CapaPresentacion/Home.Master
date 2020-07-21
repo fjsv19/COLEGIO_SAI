@@ -136,9 +136,7 @@
                     <li class="active"><a href="FormAdministrador.aspx"><i class="fa fa-user"></i><span>Perfil Administrador</span></a></li>
                     <li><a href="FrmRegistrarUsuario.aspx"><i class="fa fa-th"></i><span>Registrar Alumno</span></a></li>
                     <li><a href="GestionarAutoridad.aspx"><i class="fa fa-th"></i><span>Registrar Autoridad</span></a></li>
-                    <li><a href="RegistrarMatricula.aspx"><i class="fa fa-th"></i><span>Registrar Matricula</span></a></li>
-                    <li><a href="FormReporteAlumno.aspx"><i class="fa fa-dashboard"></i><span>Reporte de Alumnos</span></a></li>   
-                    <li><a href="FormReporteMatricula.aspx"><i class="fa fa-dashboard"></i><span>Reporte de Matrícula</span></a></li>                   
+                    <li><a href="RegistrarMatricula.aspx"><i class="fa fa-th"></i><span>Registrar Matricula</span></a></li>                  
                 </ul>
             </section>
         </aside>

@@ -5,7 +5,7 @@
     <section class="content-header">
         <h3 style="text-align:center"><b>REGISTRO DE AUTORIDAD INSTITUCIONAL</b></h3>
     </section>
-    <section class="content" style="padding-bottom:133px">
+    <section class="content" style="padding-bottom:9px">
 
         <div class="row">
 
@@ -112,6 +112,33 @@
                      </tr>
                  </table>
             </div>
-
+        <br />
+        <!-- Datatable Part -->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box box-primary">
+                    <div class="box-header">
+                        <h3 class="box-title">Lista de Autoridades</h3>
+                    </div>
+                    <div class="box-body table-responsive">
+                        <table id="tbl_Autoridad" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Nombres</th>
+                                    <th>Apellidos</th>
+                                    <th>N° Documento</th>
+                                    <th>Fecha de Nacimiento</th>
+                                    <th>Teléfono</th>
+                                    <th>Dirección</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbl_body_table_A">
+                                <!-- Data por medio de Ajax -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </asp:Content>

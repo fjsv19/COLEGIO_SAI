@@ -6,7 +6,7 @@
         <h3 style="text-align:center"><b>REGISTRO DE MATRICULA</b></h3>
     </section>
 
-    <section class="content" style="padding-bottom:101px">
+    <section class="content" style="padding-bottom:1px">
         <div class="row">
 
             <div class="col-md-12">
@@ -97,7 +97,7 @@
             </div>
         </div>
 
-        <div align="center" style="padding-top:3%">
+        <div align="center" style="padding-top:6px">
              <table>
                  <tr>
                     <td>
@@ -109,6 +109,32 @@
                     </td>
                  </tr>
              </table>
+        </div>
+        <br />
+        <!-- Datatable Part -->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box box-primary">
+                    <div class="box-header">
+                        <h3 class="box-title">Lista de Matrículas</h3>
+                    </div>
+                    <div class="box-body table-responsive">
+                        <table id="tbl_Matriculas" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Estado</th>
+                                    <th>Apellido Paterno</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbl_body_table_M">
+                                <!-- Data por medio de Ajax -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </asp:Content>
