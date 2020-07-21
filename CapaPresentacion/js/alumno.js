@@ -10,7 +10,7 @@
     template += "</tr>";
     return template;
 }
-
+ 
 function addRow() {
     var template = templateRow();
     for (var i = 0; i < 10; i++) {
