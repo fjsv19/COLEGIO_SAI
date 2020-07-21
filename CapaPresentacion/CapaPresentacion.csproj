@@ -74,8 +74,11 @@
     <Content Include="Bootstrap\bootstrap.css" />
     <Content Include="Bootstrap\bootstrap.min.css" />
     <Content Include="Bootstrap\Style.css" />
+    <Content Include="css\bootstrap.min.css" />
     <Content Include="css\EstiloAdmin.css" />
     <Content Include="css\estilos.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\ionicons.min.css" />
     <Content Include="Formularios\FormAceptarMatricula.aspx" />
     <Content Include="Formularios\FormAdministrador.aspx" />
     <Content Include="Formularios\FormAlumno.aspx" />
@@ -96,6 +99,7 @@
     <Content Include="js\AdminLTE\app.js" />
     <Content Include="js\AdminLTE\dashboard.js" />
     <Content Include="js\AdminLTE\demo.js" />
+    <Content Include="js\alumno.js" />
     <Content Include="js\plugins\bootstrap-slider\bootstrap-slider.js" />
     <Content Include="js\plugins\bootstrap-wysihtml5\bootstrap3-wysihtml5.all.min.js" />
     <Content Include="js\plugins\bootstrap-wysihtml5\bootstrap3-wysihtml5.js" />

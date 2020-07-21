@@ -38,5 +38,24 @@ namespace CapaDatos
                 }
             }
         }
+
+        public List<E_ALUMNO> listarAlumnos()
+        {
+            List<E_ALUMNO> Lista = new List<E_ALUMNO>();
+            using (var conexion = GetConnection())
+            {
+                conexion.Open();
+                using (var comand = new SqlCommand())
+                {
+                    comand.Connection = conexion;
+                    comand.CommandText = "SP_MOSTRAR_PERSONA";
+                    comand.Parameters.AddWithValue("@PE_IDPERSONA", UsuarioLoginCache.PE_IDPERSONA);
+
+                    comand.CommandType = CommandType.StoredProcedure;
+                    comand.ExecuteNonQuery();
+                }
+            }
+            return Lista;
+        }
     }
 }

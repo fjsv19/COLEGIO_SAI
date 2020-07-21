@@ -5,7 +5,7 @@
     <section class="content-header">
         <h3 style="text-align:center"><b>REGISTRO DE ALUMNO</b></h3>
     </section>
-    <section class="content" style="padding-bottom:160px">
+    <section class="content" style="padding-bottom:9px">
         <div class="row">
             <div class="col-md-6">
                 <div class="box box-primary">
@@ -99,6 +99,36 @@
                     </tr>
                 </table>
             </div>
-        
+            <br/>
+
+        <!-- Datatable Part -->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box box-primary">
+                    <div class="box-header">
+                        <h3 class="box-title">Lista de Alumnos</h3>
+                    </div>
+                    <div class="box-body table-responsive">
+                        <table id="tbl_Alumnos" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Nombres</th>
+                                    <th>Apellido Paterno</th>
+                                    <th>Apellido Materno</th>
+                                    <th>Identificación</th>
+                                    <th>Fecha de Nacimiento</th>
+                                    <th>Teléfono</th>
+                                    <th>Dirección</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbl_body_table">
+                                <!-- Data por medio de Ajax -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </asp:Content>
