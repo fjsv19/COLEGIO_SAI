@@ -112,7 +112,7 @@ namespace login
 
             E_PERSONA e_persona = new E_PERSONA(Convert.ToInt32(id);
 
-            n_alumno.actualizarAlumno(e_persona);
+            n_alumno.eliminarAlumno(e_persona);
 
         }
     }
